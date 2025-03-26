@@ -1,33 +1,85 @@
-*{
-/*Reset de configurações do Browser */
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: Arial, sans-serif;
 }
 
-nav{
-    background-color: rgb(2, 82, 69);
-    margin: 20px;
+/* Estilo para todos os links */
+a {
+    cursor: pointer; /* Mão em todos os links */
 }
 
-ul li{
+nav {
+    background-color: rgb(5, 151, 167);
+    padding: 15px 0;
+}
+
+ul {
+    text-align: center;
+}
+
+ul li {
     color: aliceblue;
     list-style: none;
-    display: inline;
-    padding: 85px;
-    margin: 35px;
+    display: inline-block;
+    padding: 10px 25px;
+    margin: 0 10px;
+    position: relative;
+    transition: all 0.3s ease;
+    cursor: pointer; /* Mão nos itens do menu */
 }
 
+ul li:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    transform: translateY(-2px);
+}
+
+ul li:active {
+    transform: translateY(1px); /* Efeito de clique */
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    padding: 5px 0;
+}
+
+/* Footer */
 footer {
     text-align: center;
-    padding: 10px 0;
+    padding: 15px 0;
     background-color: #f1f1f1;
     position: fixed;
     width: 100%;
     bottom: 0;
+    box-shadow: 0 -2px 5px rgba(0,0,0,0.1);
 }
 
 footer p {
     margin: 0;
     color: #333;
+    font-size: 14px;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    ul li {
+        display: block;
+        margin: 5px 0;
+        padding: 8px 0;
+    }
+    nav {
+        padding: 10px 0;
+    }
+}
+
+body {
+    padding-bottom: 60px;
+}
+
+main {
+    min-height: calc(100vh - 200px);
+    padding: 20px;
 }

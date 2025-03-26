@@ -2,27 +2,166 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width= , initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Good Life</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            padding-bottom: 60px;
+        }
+
+        /* Estilo do Header */
+        header {
+            background-color: rgb(5, 151, 167);
+            padding: 15px 0;
+        }
+
+        /* Container para alinhar logo e barra de pesquisa */
+        .header-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Barra de Pesquisa */
+        .search-container {
+            display: flex;
+            width: 300px;
+        }
+
+        .search-container input {
+            width: 100%;
+            padding: 8px 15px;
+            border: none;
+            border-radius: 20px 0 0 20px;
+            outline: none;
+        }
+
+        .search-container button {
+            padding: 8px 15px;
+            background-color: #fff;
+            border: none;
+            border-radius: 0 20px 20px 0;
+            cursor: pointer;
+        }
+
+        .search-container button:hover {
+            background-color: #f0f0f0;
+        }
+
+        /* Menu */
+        nav ul {
+            text-align: center;
+            margin-top: 15px;
+        }
+
+        nav ul li {
+            color: aliceblue;
+            list-style: none;
+            display: inline-block;
+            padding: 10px 25px;
+            margin: 0 5px;
+            position: relative;
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+
+        nav ul li:hover {
+            background-color: rgba(255, 255, 255, 0.1);
+            transform: translateY(-2px);
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 15px 0;
+            background-color: #f1f1f1;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+            box-shadow: 0 -2px 5px rgba(0,0,0,0.1);
+        }
+
+        /* Responsividade */
+        @media (max-width: 768px) {
+            .header-container {
+                flex-direction: column;
+            }
+
+            .search-container {
+                width: 100%;
+                margin-top: 10px;
+            }
+
+            nav ul li {
+                display: block;
+                margin: 5px 0;
+                padding: 8px 0;
+            }
+        }
+    </style>
 </head>
-<body>  <h1> Good Life</h1>
+<body>
     <header>
+        <div class="header-container">
+            <h1>Good Life</h1>
+            <div class="search-container">
+                <input type="text" placeholder="Buscar...">
+                <button type="submit">🔍</button>
+            </div>
+        </div>
         <nav>
             <ul>
-                <li><a href=""></a>Home</li>
-                <li><a href=""></a>Sustentabilidade</li>
-                <li><a href=""></a>Nossa Empresa</li>
-                <li><a href=""></a>Marcas</li>
-                <li><a href=""></a>Parceiros</li>
-                <li><a href=""></a>Carreiras</li>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Sustentabilidade</a></li>
+                <li><a href="#">Nossa Empresa</a></li>
+                <li><a href="#">Marcas</a></li>
+                <li><a href="#">Parceiros</a></li>
+                <li><a href="#">Carreiras</a></li>
+                <li><a href="#">Fale Conosco</a></li>
+                <li><a href="#">Quem Somos</a></li>
             </ul>
-            
         </nav>
     </header>
+
+    <main>
+        <section>
+            <h2>HTML</h2>
+            <p>
+                Lorem ipsum dolor sit amet consectet adipisicing elit. Doloribus, provident repellat officiis sunt saepe quae debitis, ipsa impedit corporis incidunt soluta possimus ab obcaecati aspernatur eveniet aliquam dolor fugit placeat.
+            </p>
+        </section>
+        <section>
+            <h2>CSS </h2>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, provident repellat officiis sunt saepe quae debitis, ipsa impedit corporis incidunt soluta possimus ab obcaecati aspernatur eveniet aliquam dolor fugit placeat.
+            </p>
+        </section>
+        <section>
+            <h2>JAVA SCRIPT </h2>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, provident repellat officiis sunt saepe quae debitis, ipsa impedit corporis incidunt soluta possimus ab obcaecati aspernatur eveniet aliquam dolor fugit placeat.
+            </p>
+        </section>
+    </main>
+
     <footer>
         <p>&copy; 2025 Todos os direitos reservados.</p>
     </footer>
 </body>
-
 </html>
