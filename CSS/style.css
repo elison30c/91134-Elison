@@ -1,54 +1,62 @@
-/*Seletores*/
-
-/*Zera as configurações*/
-
-*{
-padding: 0;
-margin: 0;
-box-sizing: border-box;
-
+ 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-h1{
-/*Cor do texto*/
-color: black;
-/*tipo da fonte*/
-font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-/*Tamanho da fonte*/
-font-size: 22pt;
-/*Deixar Negrito*/
-font-weight: bold;
-/*Centralizar texto*/
-text-align: center;
-/*Respiro (Espaço) dos Elementos*/
-padding: 20px;
-}
-
-h2{
-
-    background-color: bisque;
-    color: black;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-}
-section{
-margin: 15px;
-}
-
-
-p{
-    text-align: justify;
-    padding-top: 10x;
-}
-footer{
-    background-color: bisque;
-    margin: 15x;
-    color: black;
+ 
+header {
     text-align: center;
     padding: 20px;
-    margin-top: 5px;
+    background-color: #f0f0f0;  
 }
-h2:hover{
-    color: rgb(238, 236, 243);
-    background-color: blue;
+
+h1 {
+    font-size: 36px;
+    color: #333;
 }
+
  
+nav {
+    background-color: black;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;  
+    padding: 10px 0;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    padding: 10px 15px;
+}
+
+nav ul li a:hover {
+    background-color: #444;
+    border-radius: 5px;
+}
+
+ 
+main {
+    padding: 20px;
+}
+
+h2, h3 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 18px;
+    color: #666;
+}
