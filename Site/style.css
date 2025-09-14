@@ -1,0 +1,120 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+header {
+    text-align: center;
+    padding: 10px;
+    background-color: #000000;
+}
+
+h1 {
+    font-size: 36px;
+    color: #ffffff;
+}
+
+
+nav {
+    background-color: black;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+}
+
+nav ul li {
+    margin:  0px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+    padding: 10px 15px;
+}
+
+nav ul li a:hover {
+    background-color: #444;
+    border-radius: 5px;
+}
+
+
+main {
+    padding: 1px;
+}
+
+h2, h3 {
+    font-size: 24px;
+    color: #000000;
+    
+}
+
+p {
+    font-size: 18px;
+    color: #000000;
+}
+
+
+.highlight-box {
+    background-color: #d3d3d3; 
+    padding: 70px;
+    text-align: center;
+    
+}
+
+
+.centered-title {
+    text-align: center;
+    margin: 40px 0; 
+}
+
+
+.quadrados-container {
+    display: flex;
+    justify-content: center; 
+    margin-top: 20px;  
+}
+
+.quadrado {
+    width: 300px; 
+    height: 150px; 
+    margin-right: 10px;
+    background-color: #d3d3d3; 
+   
+}
+
+.quadrado3{
+    width: 300px; 
+    height: 150px; 
+    margin-right: 10px;
+    background-color: #757171; 
+}
+.quadrado4{
+    width: 300px; 
+    height: 150px; 
+    margin-right: 10px;
+    background-color: #000000; 
+}
+
+
+footer {
+    text-align: center;
+    padding: 15px 0;
+    background-color: #000000;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    box-shadow: 0 -2px 5px rgba(0,0,0,0.1);
+}
+
+footer p {
+    margin: 0;
+    color: #ffffff;
+    font-size: 14px;
+}

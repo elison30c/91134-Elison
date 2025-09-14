@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Por que eu devo torcer pro Barcelona?</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap');
+    
+    body {
+      font-family: 'Montserrat', sans-serif;
+      background-color: #f9f9f9;
+    }
+    
+    .escudo {
+      animation: pulse 2s infinite;
+    }
+    
+    @keyframes pulse {
+      0% { transform: scale(1); }
+      50% { transform: scale(1.05); }
+      100% { transform: scale(1); }
+    }
+    
+    .bg-gradient-barça {
+      background: linear-gradient(45deg, #004d98, #a50044);
+    }
+    
+    .hover-zoom:hover {
+      transform: scale(1.03);
+      transition: transform 0.3s ease;
+    }
+    
+    .emoji {
+      font-size: 1.2em;
+    }
+    
+    .value-card {
+      border-left: 4px solid transparent;
+      transition: all 0.3s ease;
+    }
+    
+    .value-card:hover {
+      border-left-color: #a50044;
+      transform: translateX(4px);
+    }
+  </style>
+</head>
+<body class="min-h-screen flex flex-col">
+  <header class="bg-gradient-barça text-white py-8 text-center">
+    <div class="container mx-auto px-4">
+      <img src="https://upload.wikimedia.org/wikipedia/en/thumb/4/47/FC_Barcelona_%28crest%29.svg/1200px-FC_Barcelona_%28crest%29.svg.png"
+            alt="Escudo do Barcelona"
+            class="mx-auto escudo h-24 w-24 mb-4">
+      <h1 class="text-4xl md:text-5xl font-extrabold bg-gradient-to-r from-yellow-400 via-red-500 to-blue-800 bg-clip-text text-transparent">Més que un club</h1>
+      <p class="mt-4 text-xl opacity-90 font-medium">O Barcelona não é apenas um clube, é uma paixão que transcende o futebol</p>
+    </div>
+  </header>
+
+    <section class="motivos mb-12 space-y-6">
+
+      <!-- Motivo 2 -->
+      <div class="bg-white p-6 rounded-lg shadow-md hover-zoom">
+        <div class="flex items-start">
+          <span class="text-xl font-bold text-blue-800 bg-yellow-200 rounded-full h-8 w-8 flex items-center justify-center mr-4">1</span>
+          <div>
+            <h3 class="text-xl font-semibold text-gray-800">Valores fundamentais</h3>
+            <p class="mt-2 text-gray-600">
+              Prega valores como: Humildade, Respeito, Esforço, Trabalho em equipe e Igualdade <span class="emoji">🌟</span>
+            </p>
+            
+            <div class="mt-4 grid grid-cols-2 md:grid-cols-3 gap-3">
+              <div class="value-card p-3 bg-blue-50 rounded">
+                <i class="fas fa-hands-helping text-blue-800"></i>
+                <span class="ml-2 font-medium">Humildade</span>
+              </div>
+              <div class="value-card p-3 bg-blue-50 rounded">
+                <i class="fas fa-handshake text-blue-800"></i>
+                <span class="ml-2 font-medium">Respeito</span>
+              </div>
+              <div class="value-card p-3 bg-blue-50 rounded">
+                <i class="fas fa-running text-blue-800"></i>
+                <span class="ml-2 font-medium">Esforço</span>
+              </div>
+              <div class="value-card p-3 bg-blue-50 rounded">
+                <i class="fas fa-users text-blue-800"></i>
+                <span class="ml-2 font-medium">Equipe</span>
+              </div>
+              <div class="value-card p-3 bg-blue-50 rounded">
+                <i class="fas fa-equals text-blue-800"></i>
+                <span class="ml-2 font-medium">Igualdade</span>
+              </div>
+            </div>
+            
+            <a href="https://www.fcbarcelona.com/en/club/identity"
+                target="_blank"
+                class="mt-4 inline-block px-4 py-2 bg-blue-800 text-white rounded hover:bg-blue-700 transition">
+              Leia mais sobre os valores
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Motivo 3 -->
+      <div class="bg-white p-6 rounded-lg shadow-md hover-zoom">
+        <div class="flex items-start">
+          <span class="text-xl font-bold text-blue-800 bg-yellow-200 rounded-full h-8 w-8 flex items-center justify-center mr-4">2</span>
+          <div class="w-full">
+            <h3 class="text-xl font-semibold text-gray-800">O maior estádio da Europa</h3>
+            <p class="mt-2 text-gray-600">
+              Camp Nou em reforma, capacidade passará de 99 mil para 110 mil espectadores! <span class="emoji">🏟</span>
+            </p>
+            
+            <div class="mt-4 bg-blue-800 text-white p-4 rounded-lg">
+              <div class="flex items-center justify-between">
+                <div>
+                  <h4 class="font-bold text-lg">Camp Nou</h4>
+                  <p class="text-blue-100">O templo do futebol</p>
+                </div>
+                <i class="fas fa-landmark text-3xl text-yellow-400"></i>
+              </div>
+              <div class="mt-3 grid grid-cols-3 gap-2 text-center">
+                <div class="bg-blue-700 p-2 rounded">
+                  <div class="text-yellow-400 font-bold">110k</div>
+                  <div class="text-xs">Capacidade</div>
+                </div>
+                <div class="bg-blue-700 p-2 rounded">
+                  <div class="text-yellow-400 font-bold">1957</div>
+                  <div class="text-xs">Inauguração</div>
+                </div>
+                <div class="bg-blue-700 p-2 rounded">
+                  <div class="text-yellow-400 font-bold">5⭐</div>
+                  <div class="text-xs">Classificação</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Motivo 4 -->
+      <div class="bg-white p-6 rounded-lg shadow-md hover-zoom">
+        <div class="flex items-start">
+          <span class="text-xl font-bold text-blue-800 bg-yellow-200 rounded-full h-8 w-8 flex items-center justify-center mr-4">3</span>
+          <div>
+            <h3 class="text-xl font-semibold text-gray-800">Excelente relação com brasileiros</h3>
+            <p class="mt-2 text-gray-600">Grandes jogadores brasileiros jogaram no Barcelona: <span class="emoji"></span></p>
+            
+            <div class="mt-4 flex flex-wrap gap-3">
+              <div class="bg-yellow-500 text-white px-3 py-1 rounded-full text-sm flex items-center">
+                <i class="fas fa-futbol mr-1"></i> Romário
+              </div>
+              <div class="bg-green-600 text-white px-3 py-1 rounded-full text-sm flex items-center">
+                <i class="fas fa-futbol mr-1"></i> Ronaldo
+              </div>
+              <div class="bg-blue-700 text-white px-3 py-1 rounded-full text-sm flex items-center">
+                <i class="fas fa-futbol mr-1"></i> Ronaldinho
+              </div>
+              <div class="bg-red-600 text-white px-3 py-1 rounded-full text-sm flex items-center">
+                <i class="fas fa-futbol mr-1"></i> Neymar
+              </div>
+              <div class="bg-purple-600 text-white px-3 py-1 rounded-full text-sm flex items-center">
+                <i class="fas fa-futbol mr-1"></i> Rivaldo
+              </div>
+              <div class="bg-pink-600 text-white px-3 py-1 rounded-full text-sm flex items-center">
+                <i class="fas fa-futbol mr-1"></i> Daniel Alves
+              </div>
+              <div class="bg-indigo-600 text-white px-3 py-1 rounded-full text-sm flex items-center">
+                <i class="fas fa-futbol mr-1"></i> Deco
+              </div>
+              <div class="bg-orange-600 text-white px-3 py-1 rounded-full text-sm flex items-center">
+                <i class="fas fa-futbol mr-1"></i> Marques
+              </div>
+              <div class="bg-lime-600 text-white px-3 py-1 rounded-full text-sm flex items-center">
+                <i class="fas fa-futbol mr-1"></i> Evaristo
+              </div>
+                <div class="bg-yellow-600 text-white px-3 py-1 rounded-full text-sm flex items-center">
+                <i class="fas fa-futbol mr-1"></i> Raphinha
+                </div>
+                <div class="bg-blue-600 text-white px-3 py-1 rounded-full text-sm flex items-center">
+                <i class="fas fa-futbol mr-1"></i> Belleti
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Motivo 5 -->
+      <div class="bg-white p-6 rounded-lg shadow-md hover-zoom">
+        <div class="flex items-start">
+          <span class="text-xl font-bold text-blue-800 bg-yellow-200 rounded-full h-8 w-8 flex items-center justify-center mr-4">5</span>
+          <div class="w-full">
+            <h3 class="text-xl font-semibold text-gray-800">Melhor clube feminino do mundo</h3>
+            <p class="mt-2 text-gray-600">
+              Time feminino dominante com estrelas como Alexia Putellas e Aitana Bonmatí <span class="emoji">♀</span>
+            </p>
+            
+            <div class="mt-4 bg-blue-50 p-4 rounded-lg">
+              <div class="flex items-center">
+                <div class="w-16 h-16 rounded-full bg-blue-800 flex items-center justify-center text-white text-2xl">
+                  <i class="fas fa-medal"></i>
+                </div>
+                <div class="ml-4">
+                  <h4 class="font-bold text-blue-800">Time Feminino</h4>
+                  <div class="flex space-x-1 mt-1">
+                    <span class="text-xs bg-blue-800 text-white px-2 py-0.5 rounded">Campeões</span>
+                    <span class="text-xs bg-blue-800 text-white px-2 py-0.5 rounded">Recordes</span>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="mt-4 grid grid-cols-2 gap-2">
+                <div class="bg-white p-2 rounded shadow-sm">
+                  <div class="text-yellow-500">
+                    <i class="fas fa-trophy"></i> Liga dos Campeões
+                  </div>
+                  <div class="text-sm font-bold">2x</div>
+                </div>
+                <div class="bg-white p-2 rounded shadow-sm">
+                  <div class="text-yellow-500">
+                    <i class="fas fa-award"></i> Liga Espanhola
+                  </div>
+                  <div class="text-sm font-bold">8x</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Motivo 6 -->
+      <div class="bg-white p-6 rounded-lg shadow-md hover-zoom">
+        <div class="flex items-start">
+          <span class="text-xl font-bold text-blue-800 bg-yellow-200 rounded-full h-8 w-8 flex items-center justify-center mr-4">6</span>
+          <div>
+            <h3 class="text-xl font-semibold text-gray-800">História de grandes jogadores</h3>
+            <p class="mt-2 text-gray-600">
+              Muitos dos melhores jogadores da história já jogaram no clube: 
+              Messi, Cruyff, Ronaldinho, Iniesta, Xavi, Guardiola e muitos outros <span class="emoji">🔝</span>
+            </p>
+            
+            <div class="mt-4 grid grid-cols-2 md:grid-cols-3 gap-3">
+              <div class="bg-blue-100 p-2 rounded flex items-center">
+                <div class="w-8 h-8 rounded-full bg-blue-800 flex items-center justify-center text-white">
+                  <i class="fas fa-user"></i>
+                </div>
+                <span class="ml-2 font-medium">Messi</span>
+              </div>
+              <div class="bg-blue-100 p-2 rounded flex items-center">
+                <div class="w-8 h-8 rounded-full bg-blue-800 flex items-center justify-center text-white">
+                  <i class="fas fa-user"></i>
+                </div>
+                <span class="ml-2 font-medium">Cruyff</span>
+              </div>
+              <div class="bg-blue-100 p-2 rounded flex items-center">
+                <div class="w-8 h-8 rounded-full bg-blue-800 flex items-center justify-center text-white">
+                  <i class="fas fa-user"></i>
+                </div>
+                <span class="ml-2 font-medium">Iniesta</span>
+              </div>
+              <div class="bg-blue-100 p-2 rounded flex items-center">
+                <div class="w-8 h-8 rounded-full bg-blue-800 flex items-center justify-center text-white">
+                  <i class="fas fa-user"></i>
+                </div>
+                <span class="ml-2 font-medium">Xavi</span>
+              </div>
+              <div class="bg-blue-100 p-2 rounded flex items-center">
+                <div class="w-8 h-8 rounded-full bg-blue-800 flex items-center justify-center text-white">
+                  <i class="fas fa-user"></i>
+                </div>
+                <span class="ml-2 font-medium">Kubala</span>
+              </div>
+              <div class="bg-blue-100 p-2 rounded flex items-center">
+                <div class="w-8 h-8 rounded-full bg-blue-800 flex items-center justify-center text-white">
+                  <i class="fas fa-user"></i>
+                </div>
+                <span class="ml-2 font-medium">Suárez</span>
+              </div>
+              <div class="bg-blue-100 p-2 rounded flex items-center">
+                <div class="w-8 h-8 rounded-full bg-blue-800 flex items-center justify-center text-white">
+                  <i class="fas fa-user"></i>
+                </div>
+                <span class="ml-2 font-medium">Stoichkov</span>
+              </div>
+              <div class="bg-blue-100 p-2 rounded flex items-center">
+                <div class="w-8 h-8 rounded-full bg-blue-800 flex items-center justify-center text-white">
+                  <i class="fas fa-user"></i>
+                </div>
+                <span class="ml-2 font-medium">Puyol</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Motivo 7 -->
+      <div class="bg-white p-6 rounded-lg shadow-md hover-zoom">
+        <div class="flex items-start">
+          <span class="text-xl font-bold text-blue-800 bg-yellow-200 rounded-full h-8 w-8 flex items-center justify-center mr-4">7</span>
+          <div class="w-full">
+            <h3 class="text-xl font-semibold text-gray-800">O melhor time da história</h3>
+            <p class="mt-2 text-gray-600">
+              Formou o melhor time da história do futebol (Barcelona de Guardiola, 2008-2012) <span class="emoji">🔝🔝🔝</span>
+            </p>
+            
+            <div class="mt-4 bg-gradient-barça text-white p-4 rounded-lg">
+              <div class="flex justify-between items-center">
+                <h4 class="font-bold text-lg">Barcelona 2008-2012</h4>
+                <i class="fas fa-crown text-yellow-400 text-2xl"></i>
+              </div>
+              
+              <div class="mt-3 space-y-2">
+                <div class="flex justify-between">
+                  <span>Jogos:</span>
+                  <span class="font-bold">190</span>
+                </div>
+                <div class="flex justify-between">
+                  <span>Vitórias:</span>
+                  <span class="font-bold">140</span>
+                </div>
+                <div class="flex justify-between">
+                  <span>Títulos:</span>
+                  <span class="font-bold">14</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Motivo 8 -->
+      <div class="bg-white p-6 rounded-lg shadow-md hover-zoom">
+        <div class="flex items-start">
+          <span class="text-xl font-bold text-blue-800 bg-yellow-200 rounded-full h-8 w-8 flex items-center justify-center mr-4">8</span>
+          <div>
+            <h3 class="text-xl font-semibold text-gray-800">Mais que um clube</h3>
+            <p class="mt-2 text-gray-600">
+              "Més que un club" é mais que um lema, é uma filosofia de vida. <span class="emoji">🔴🟡🔵🟢</span>
+            </p>
+            
+            <div class="mt-4 bg-blue-50 p-4 rounded-lg border border-blue-200">
+              <div class="flex items-center">
+                <i class="fas fa-quote-left text-blue-800 text-2xl opacity-50 mr-2"></i>
+                <p class="italic text-blue-900">
+                  O Barcelona é mais que um time de futebol, é um símbolo cultural e social da Catalunha e de todos que amam o belo jogo.
+                </p>
+              </div>
+            </div>
+            
+            <a href="https://www.fcbarcelona.com/en/news/827967/mes-que-un-club/amp"
+                target="_blank"
+                class="mt-4 inline-block px-4 py-2 bg-blue-800 text-white rounded hover:bg-blue-700 transition">
+              Leia sobre "Més que un club"
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div class="text-center my-8">
+    <a href="#top" class="inline-block px-6 py-3 bg-blue-800 text-white rounded-full hover:bg-blue-700 transition-all duration-300 shadow-lg hover:shadow-xl">
+      <i class="fas fa-arrow-up mr-2"></i> Voltar ao Topo
+    </a>
+  </div>
+
+  <footer class="bg-gradient-barça text-white py-6 text-center">
+    <div class="container mx-auto px-4">
+      <h2 class="text-3xl font-bold mb-3">Visca el Barça! <span class="emoji">💙❤️</span></h2>
+      <p class="text-lg mb-4">O time do povo, o time do mundo!</p>
+      <div class="animate-pulse bg-white/20 p-3 rounded-lg max-w-md mx-auto">
+        <p class="font-bold text-yellow-300">TROFÉUS CONQUISTADOS:</p>
+        <div class="text-4xl font-black mt-2" id="trophyCounter">
+          96
+        </div>
+      </div>
+      <div class="mt-4 flex justify-center space-x-4">
+        <a href="https://www.facebook.com/fcbarcelona" target="_blank" class="text-white hover:text-yellow-200 text-xl">
+          <i class="fab fa-facebook"></i>
+        </a>
+        <a href="https://twitter.com/FCBarcelona" target="_blank" class="text-white hover:text-yellow-200 text-xl">
+          <i class="fab fa-twitter"></i>
+        </a>
+        <a href="https://www.instagram.com/fcbarcelona/" target="_blank" class="text-white hover:text-yellow-200 text-xl">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a href="https://www.youtube.com/user/fcbarcelona" target="_blank" class="text-white hover:text-yellow-200 text-xl">
+          <i class="fab fa-youtube"></i>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Efeito de digitação no título
+    document.addEventListener('DOMContentLoaded', function() {
+      // Efeitos de hover nos cards
+      const cards = document.querySelectorAll('.hover-zoom');
+      cards.forEach(card => {
+        card.addEventListener('mouseenter', function() {
+          this.style.transform = 'scale(1.03)';
+          this.style.boxShadow = '0 6px 12px rgba(0, 0, 0, 0.15)';
+        });
+        
+        card.addEventListener('mouseleave', function() {
+          this.style.transform = 'scale(1)';
+          this.style.boxShadow = '0 4px 6px rgba(0, 0, 0, 0.1)';
+        });
+      });
+    });
+
+    // Animação do contador de troféus
+    const counter = document.getElementById('trophyCounter');
+    let target = 96;
+    let current = 0;
+    let speed = 50;
+
+    const animateCounter = () => {
+      if (current < target) {
+        current += 1;
+        counter.textContent = current;
+        setTimeout(animateCounter, speed);
+      }
+    };
+
+    // Inicia animação quando o elemento estiver visível
+    const observer = new IntersectionObserver((entries) => {
+      if (entries[0].isIntersecting) {
+        animateCounter();
+        observer.disconnect();
+      }
+    });
+
+    observer.observe(counter);
+  </script>
+</body>
+</html>

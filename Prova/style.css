@@ -1,81 +1,9 @@
- 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
- 
-header {
-    text-align: center;
-    padding: 20px;
-    background-color: #f0f0f0;  
-}
-
-h1 {
-    font-size: 36px;
-    color: #333;
-}
-
- 
-nav {
-    background-color: black;
-}
-
-nav ul {
-    list-style-type: none;
-    display: flex;
-    justify-content: center;  
-    padding: 10px 0;
-}
-
-nav ul li {
-    margin: 0 20px;
-}
-
-nav ul li a {
-    text-decoration: none;
-    color: white;
-    font-size: 18px;
-    padding: 10px 15px;
-}
-
-nav ul li a:hover {
-    background-color: #444;
-    border-radius: 5px;
-}
-
- 
-main {
-    padding: 20px;
-}
-
-h2, h3 {
-    font-size: 24px;
-    color: #333;
-    margin-bottom: 10px;
-}
-
-p {
-    font-size: 18px;
-    color: #666;
-}
-
-
-
-
-
-
-
-
-
-/* Cabeçalho */
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     background-color: #e0e0e0;
-    padding: 15px 40px;
+    padding: 20px 40px;
 }
 
 .logo {
@@ -89,11 +17,11 @@ nav ul {
 }
 
 nav ul li {
-    margin-left: 20px; /* Espaçamento entre os itens do menu */
+    margin-left: 20px;   
 }
 
 nav ul li:first-child {
-    margin-left: 0; /* Remove margem do primeiro item */
+    margin-left: 0;  
 }
 
 nav ul li a {
@@ -101,7 +29,7 @@ nav ul li a {
     color: black;
 }
 
-/* Seção Hero */
+ 
 .hero {
     text-align: center;
     padding: 50px 20px;
@@ -117,7 +45,7 @@ nav ul li a {
     margin-bottom: 15px;
 }
 
-.btn {
+.button {
     display: inline-block;
     background-color: #007bff;
     color: white;
@@ -126,7 +54,7 @@ nav ul li a {
     border-radius: 5px;
 }
 
-/* Seção Features */
+ 
 .features {
     display: flex;
     justify-content: center;
@@ -139,10 +67,10 @@ nav ul li a {
     width: 30%;
     text-align: center;
     border-radius: 5px;
-    margin: 0 10px; /* Espaçamento entre os itens */
+    margin: 0 10px;  
 }
 
-/* Ajusta o espaçamento lateral para telas menores */
+ 
 @media (max-width: 768px) {
     .features {
         flex-direction: column;
@@ -151,11 +79,11 @@ nav ul li a {
 
     .feature {
         width: 80%;
-        margin: 10px 0; /* Ajuste para alinhamento vertical */
+        margin: 10px 0;  
     }
 }
 
-/* Rodapé */
+ 
 footer {
     background-color: #333;
     color: white;
