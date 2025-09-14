@@ -5,11 +5,26 @@ const confettiCanvas = document.getElementById('confetti-canvas');
 confettiCanvas.width = window.innerWidth;
 confettiCanvas.height = window.innerHeight;
 
-card.addEventListener("click", () => {
+// Função para abrir o cartão
+function openCard() {
   card.classList.toggle("open");
   if (card.classList.contains("open")) {
     startConfetti();
   }
+}
+
+// Evento de CLIQUE (mouse)
+card.addEventListener("click", openCard);
+
+// Evento de TOQUE (dispositivos móveis)
+card.addEventListener("touchstart", function(e) {
+  e.preventDefault(); // Previne comportamento padrão
+  openCard();
+}, { passive: false });
+
+// Evento para evitar zoom acidental com double-tap
+card.addEventListener('touchend', function(e) {
+  e.preventDefault();
 });
 
 function startConfetti(){
@@ -42,10 +57,11 @@ window.addEventListener('resize', function() {
   confettiCanvas.height = window.innerHeight;
 });
 
-// Adicione esta parte para facilitar o toque em dispositivos móveis
-card.addEventListener('touchstart', function() {
-  this.classList.toggle("open");
-  if (this.classList.contains("open")) {
-    startConfetti();
+// Adicionar estilo para melhorar a experiência touch
+document.addEventListener('DOMContentLoaded', function() {
+  // Adiciona uma dica visual para mobile
+  if ('ontouchstart' in window) {
+    card.style.cursor = 'pointer';
+    card.title = "Toque para abrir";
   }
 });
